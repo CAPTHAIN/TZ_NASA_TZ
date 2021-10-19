@@ -5,6 +5,7 @@ from .parse import get_post_data
 
 
 class MainPage(ListView):
+    paginate_by = 3
     model = Post
     template_name = 'nasa/main.html'
     context_object_name = 'posts'
